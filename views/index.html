@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Notes</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="editTodo">
+  <!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+  <!-- <div class="menu" id="menu">
+        <i class="fa fa-bars"></i>
+    </div> -->
+  <nav class="nav" id="main">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo-box">
+          <a href="#" class="logo" id="home">Notes App</a>
+        </div>
+        <ul class="nav-link">
+          <li>
+            <a href="#" style="color: #fff;" id="back">&lt;&lt;&lt;&lt;Back</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <button href="#" class="clear" id="clear">Clear</button> -->
+  <div class="form-container">
+    <div class="container">
+      <form class="form-tag" id="form">
+        <div class="form-group">
+          <textarea name="note" cols="70" rows="7" id="note" placeholder="Write your note here" autofocus></textarea>
+        </div>
+        <div class="select-btn">
+          <div class="form-group select-option">
+            <select name="topic" id="topic">
+              <option value="select" disabled selected>Select a topic</option>
+              <option value="personal">Personal</option>
+              <option value="study">Work</option>
+              <option value="work">Study</option>
+            </select>
+          </div>
+          <input type="hidden" value="" class="" id="id" />
+          <input type="hidden" value="" class="" id="time-created" />
+          <input type="hidden" value="Cancel" class="btn cancel" id="cancel" />
+          <button type="submit" class="btn add-btn add" id="add-button" disabled>
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="output-container" id="all-note">
+    <div class="container">
+      <div class="output-flex">
+        <p>Notes</p>
+        <div id="output"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="note-container" id="note-container">
+    <div class="container">
+      <div class="single-note">
+        <div id="single-output">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="message" id="message">
+    <div class="container">
+      <h2>About Notes</h2>
+      <p>
+        This app was built using only NodeJS. Add a note of more than 30
+        characters long, with a selected topic and you are good to go!.
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Copyright <span id="get-year">2020</span> | By
+        <a href="http://twitter.com/jobafash" style="color: rgb(102, 150, 200);" target="_blank">Jobafash</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="alert">
+    <div class="container">
+      <div class="alert-box" id="alert-box">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div hidden class="spinner" id="spinner"></div>
+  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+		etnecessitatibus quod. Possimus saepe beatae nihil tempora officiis,
+		deleniti sapiente atque cum modi consequatur, ea libero hic dolorum Lorem
+		ipsum dolor sit amet consectetur adipisicing elit. Ipsam etnecessitatibus
+		quod. Possimus saepe beatae nihil tempora officiis, deleniti sapiente atque
+		cum modi consequatur, ea libero hic dolorum accusamus nostrum. accusamus
+		nostrum. -->
+
+  <script src="/life.js"></script>
+</body>
+
+</html>
